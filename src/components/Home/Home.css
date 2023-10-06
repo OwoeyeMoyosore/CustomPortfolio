@@ -13,7 +13,7 @@
     background-color: #000000;
    
     overflow: hidden;
-
+   
 @media (max-width: 480px){
     padding-inline: 1rem;
 }
@@ -45,13 +45,24 @@
     z-index: -1;
 }
 .main{
+
+    @media (min-width: 750px) {
+        width: 730px;
+        margin-inline: auto;
+    }
     margin-block: 5rem;
+    padding: 30px;
 
     /* margin-inline: 20rem; */
 
-    @media (max-width: 480px) {
-        /* margin-inline: 1rem; */
+  
+    /* @media (max-width: 980px) {
+        margin-inline: 5rem;
     }
+    @media (max-width: 480px) {
+        margin-inline: 1rem;
+    } */
+
 }
 .heading{
     color: white;
@@ -77,23 +88,29 @@ image{
     max-width: 100%;
 }
 .grids{
-    margin-inline: 10rem;
-    @media (max-width: 920px) {
+    /* margin-inline: 20rem;
+    @media (max-width: 980px) {
         margin-inline: 5rem;
     }
     @media (max-width: 480px) {
         margin-inline: 1rem;
-    }
+    } */
 }
 
 .fourImages{
-    width: 26rem;
+    /* width: 26rem; */
     height: 12.25rem;
-    border-radius: 4px;
+    width: 100%;
+    border-radius: 16px;
     max-width: 100%;
     object-fit: cover;
     /* object-fit: contain; */
     object-position: center;
+
+    @media (max-width:480px) {
+        height: 9rem;
+    }
+   
 }
 
 .grid2{
@@ -102,4 +119,11 @@ image{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 2rem;
     gap: 2rem;
+    
+}
+
+.link{
+    /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
 }
