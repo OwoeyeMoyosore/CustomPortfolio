@@ -65,14 +65,22 @@
 .sub{
 font-size: 1.3125rem;
 }
+image{
+    display: block;
+      max-width: 23.75rem;
+}
 .image1{
     width: 23.75rem;
+    /* width: 100%; */
     border-radius: 1rem;
     margin-block: 5rem;
+    max-width: 100%;
 }
 .grids{
-    margin-inline: 20rem;
-    
+    margin-inline: 10rem;
+    @media (max-width: 920px) {
+        margin-inline: 5rem;
+    }
     @media (max-width: 480px) {
         margin-inline: 1rem;
     }
@@ -80,9 +88,18 @@ font-size: 1.3125rem;
 
 .fourImages{
     width: 26rem;
-    height: 15rem;
+    height: 12.25rem;
     border-radius: 4px;
+    max-width: 100%;
+    object-fit: cover;
     /* object-fit: contain; */
-    /* object-fit: contain; */
-    /* object-position: 50%; */
+    object-position: center;
+}
+
+.grid2{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 2rem;
+    gap: 2rem;
 }

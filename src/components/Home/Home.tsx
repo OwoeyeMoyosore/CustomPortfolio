@@ -122,49 +122,33 @@ const Home = () => {
           
         </Grid>
 
-    <Grid container spacing={2} sx={{marginTop: "2rem"}}>
-      <Grid xs={6}>
+    <div  className="grid2">
+      <div >
         {/* <Item> */}
              <img src={image1} alt="four" className="fourImages"></img>
         {/* </Item>  */}
-      </Grid>
+      </div>
 
-      <Grid xs={6}>
+      <div >
         {/* <Item> */}
              <img src={image1} alt="four" className="fourImages"></img>
         {/* </Item>  */}
-      </Grid>
+      </div>
 
-      <Grid xs={6}>
+      <div >
         {/* <Item> */}
              <img src={image1} alt="four" className="fourImages"></img>
         {/* </Item>  */}
-      </Grid>
+      </div>
 
-      <Grid xs={6}>
+      <div>
         {/* <Item> */}
              <img src={image1} alt="four" className="fourImages"></img>
         {/* </Item>  */}
-      </Grid>
+      </div>
 
-      {/* <Grid xs={6}>
-        <Item>
-             <img src={image1} alt="four"></img>
-        </Item> 
-      </Grid>
-
-      <Grid xs={6}>
-        <Item>
-             <img src={image1} alt="four"></img>
-        </Item> 
-      </Grid>
-
-      <Grid xs={6}>
-        <Item>
-             <img src={image1} alt="four"></img>
-        </Item> 
-      </Grid> */}
-    </Grid>
+   
+    </div>
 </div>
       
       </main>
