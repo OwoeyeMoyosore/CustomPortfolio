@@ -1,6 +1,6 @@
 .section{
     line-height: 1.5;
-    font-family: sans-serif;
+  
     /* position: relative; */
     /* min-height: 100vh; */
     /* height: 100%;
@@ -69,22 +69,36 @@
 }
 .greet{
     font-size: 2.5rem;
+    @media (max-width:480px) {
+        font-size: 2rem;
+    }
 }
 .plan{
  font-size: 1.5rem;
+ text-transform: uppercase;
+ font-weight: bold;
+ padding-block: 1rem;
+ 
 }
 .sub{
 font-size: 1.3125rem;
+
+@media (max-width:480px) {
+    font-size: 1rem;
 }
-image{
-    display: block;
-      max-width: 23.75rem;
+
+}
+.image{
+    /* display: block; */
+      /* max-width: 23.75rem; */
+      margin-block-end: 4rem;
 }
 .image1{
     width: 23.75rem;
     /* width: 100%; */
     border-radius: 1rem;
-    margin-block: 5rem;
+    margin-block-start: 4rem;
+    margin-block-end: 2rem;
     max-width: 100%;
 }
 .grids{
@@ -100,6 +114,7 @@ image{
 .fourImages{
     /* width: 26rem; */
     height: 12.25rem;
+    max-height: 100%;
     width: 100%;
     border-radius: 16px;
     max-width: 100%;
@@ -108,7 +123,8 @@ image{
     object-position: center;
 
     @media (max-width:480px) {
-        height: 9rem;
+        max-height: 10rem;
+        height: 100%;
     }
    
 }
@@ -123,7 +139,18 @@ image{
 }
 
 .link{
-    /* display: flex; */
-  /* align-items: center; */
-  justify-content: center;
+    display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+  min-height: 5rem;
+  text-align: start!important;
+}
+.social{
+    font-size: 1rem;
+    color: #a6a6a7;
+   
+    @media (max-width:480px) {
+        /* font-size: 1.3rem; */
+    }
 }
