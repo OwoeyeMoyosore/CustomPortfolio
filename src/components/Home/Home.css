@@ -70,7 +70,7 @@
 .greet{
     font-size: 2.5rem;
     @media (max-width:480px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 .plan{
