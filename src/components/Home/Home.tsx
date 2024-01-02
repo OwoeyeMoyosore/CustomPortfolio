@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import image2 from "../../assets/winnie3.jpg";
 import image4 from "../../assets/winnie7.jpg";
 import image5 from "../../assets/winnie5.jpg";
-import image6 from "../../assets/winnie8.jpg";
+import image6 from "../../assets/winnie9.jpg";
 import {ReactComponent as Ebook} from "../../assets/ebook.svg"
-
+import InterviewIcon from "../../assets/interview.png";
+import ArticlesIcon from "../../assets/articles.png";
+import PortfolioIcon from "../../assets/portfolio.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -48,7 +50,7 @@ const Home = () => {
               <Items style={{ color: "#a6a6a7" }}>
                 <Link to="/" className="link">
                   {/* <FaTiktok /> */}
-                  <svg
+                  {/* <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -68,7 +70,8 @@ const Home = () => {
                       fill="currentColor"
                       d="M309.8 480.3c-13.6 14.5-50 31.7-97.4 31.7-120.8 0-147-88.8-147-140.6v-144H17.9c-5.5 0-10-4.5-10-10v-68c0-7.2 4.5-13.6 11.3-16 62-21.8 81.5-76 84.3-117.1.8-11 6.5-16.3 16.1-16.3h70.9c5.5 0 10 4.5 10 10v115.2h83c5.5 0 10 4.4 10 9.9v81.7c0 5.5-4.5 10-10 10h-83.4V360c0 34.2 23.7 53.6 68 35.8 4.8-1.9 9-3.2 12.7-2.2 3.5.9 5.8 3.4 7.4 7.9l22 64.3c1.8 5 3.3 10.6-.4 14.5z"
                     ></path>
-                  </svg>
+                  </svg> */}
+                    <img src={PortfolioIcon} alt="portfolio" style={{width: "35px", height: "35px",  paddingInline: "1rem",}}/>
                   <span className="social">
                     View my Portfolio Here
                   </span>{" "}
@@ -79,7 +82,7 @@ const Home = () => {
   {/* E-book */}
   <Grid item xs={12} sm={6} spacing={10}>
               <Items style={{ color: "#a6a6a7" }}>
-                <Link to="" className="link">
+                <Link to="/e-book" className="link">
                  
                  <Ebook style={{paddingInline: "1rem"}}/>
                   <span className="social">
@@ -232,7 +235,7 @@ const Home = () => {
                   to=""
                   className="link"
                 >
-                  <svg
+                  {/* <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -252,7 +255,8 @@ const Home = () => {
                       fill="currentColor"
                       d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
                     ></path>
-                  </svg>
+                  </svg> */}
+                  <img src={InterviewIcon} alt="interview" style={{width: "30px", height: "30px",  paddingInline: "1rem",}}/>
                   <span className="social">
                   Read my full interview with Roddie law production 
                   </span>{" "}
@@ -267,7 +271,7 @@ const Home = () => {
                   to=""
                   className="link"
                 >
-                  <svg
+                  {/* <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -287,7 +291,8 @@ const Home = () => {
                       fill="currentColor"
                       d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
                     ></path>
-                  </svg>
+                  </svg> */}
+                      <img src={ArticlesIcon} alt="interview" style={{width: "30px", height: "30px",  paddingInline: "1rem",}}/>
                   <span className="social">
                   Check out some of my articles
                   </span>{" "}
@@ -335,31 +340,32 @@ const Home = () => {
 
           </Grid>
 
-          <div className="grid2">
-            <div>
-              {/* <Item> */}
+          {/* <div className="grid2"> */}
+          
+            {/* <div>
+              
               <img src={image2} alt="four" className="fourImages"></img>
-              {/* </Item>  */}
+              
             </div>
 
             <div>
-              {/* <Item> */}
+             
               <img src={image4} alt="four" className="fourImages"></img>
-              {/* </Item>  */}
+          
             </div>
 
             <div>
-              {/* <Item> */}
+             
               <img src={image5} alt="four" className="fourImages"></img>
-              {/* </Item>  */}
-            </div>
+            
+            </div> */}
 
             <div>
               {/* <Item> */}
-              <img src={image6} alt="four" className="fourImages"></img>
+              {/* <img src={image6} alt="four" className="fourImages"></img> */}
               {/* </Item>  */}
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </main>
     </section>
