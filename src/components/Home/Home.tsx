@@ -3,10 +3,10 @@ import image1 from "../../assets/winnie2.png";
 import { Grid, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
-import image2 from "../../assets/winnie3.jpg";
-import image4 from "../../assets/winnie7.jpg";
-import image5 from "../../assets/winnie5.jpg";
-import image6 from "../../assets/winnie9.jpg";
+// import image2 from "../../assets/winnie3.jpg";
+// import image4 from "../../assets/winnie7.jpg";
+// import image5 from "../../assets/winnie5.jpg";
+// import image6 from "../../assets/winnie9.jpg";
 import {ReactComponent as Ebook} from "../../assets/ebook.svg"
 import InterviewIcon from "../../assets/interview.png";
 import ArticlesIcon from "../../assets/articles.png";
